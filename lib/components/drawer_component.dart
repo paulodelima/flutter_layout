@@ -39,7 +39,7 @@ class _CustomDrawerState extends State<CustomDrawer> {
             title: Text('Sair'),
             subtitle: Text('Finalizar sessão'),
             onTap: () {
-              print('Sair');
+              Navigator.of(context).pushReplacementNamed('/');
             },
           ),
         ],
