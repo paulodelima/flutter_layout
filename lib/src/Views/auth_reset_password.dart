@@ -25,9 +25,10 @@ class ResetPasswordPage extends StatelessWidget {
                   child: Column(
                     children: <Widget>[
                       SizedBox(
-                        width: 200,
-                        height: 200,
-                        child: Image.asset("assets/auth/reset-password-icon.png"),
+                        width: 150,
+                        height: 150,
+                        child:
+                            Image.asset("assets/auth/reset-password-icon.png"),
                       ),
                       SizedBox(
                         height: 20,
@@ -52,6 +53,9 @@ class ResetPasswordPage extends StatelessWidget {
                       )
                     ],
                   ),
+                ),
+                SizedBox(
+                  height: 20,
                 ),
                 Container(
                   width: double.infinity,
@@ -100,7 +104,7 @@ class ResetPasswordPage extends StatelessWidget {
                               ),
                               textAlign: TextAlign.center,
                             ),
-                            onPressed: () {},
+                            onPressed: () => Navigator.pop(context, false),
                           ),
                         ),
                       ),
