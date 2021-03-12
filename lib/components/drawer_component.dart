@@ -14,7 +14,7 @@ class _CustomDrawerState extends State<CustomDrawer> {
           UserAccountsDrawerHeader(
               currentAccountPicture: ClipRRect(
                 borderRadius: BorderRadius.circular(40),
-                child: Image.asset('assets/images/paulo.jpg'),
+                child: Image.asset('assets/images/profile-picture.jpg'),
               ),
               accountName: Text('Paulo'),
               accountEmail: Text('paulo@soulplus.digital')),

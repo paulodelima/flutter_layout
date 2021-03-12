@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_layout/src/Views/auth_login.dart';
+import 'package:flutter_layout/src/Views/auth_reset_password.dart';
+import 'package:flutter_layout/src/Views/auth_signup.dart';
 import 'package:flutter_layout/src/Views/cliente_detail_view.dart';
 import 'package:flutter_layout/src/Views/clientes_view.dart';
 import 'package:flutter_layout/src/Views/home_view.dart';
@@ -17,8 +20,11 @@ class App extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      initialRoute: '/home',
+      initialRoute: '/',
       routes: {
+        '/': (context) => LoginPage(),
+        '/resetPassword': (context) => ResetPasswordPage(),
+        '/signup': (context) => SignupPage(),
         '/home': (context) => HomePage(),
         '/clientes': (context) => Clientes(),
         '/clienteDetail': (context) => ClienteDetail(),
